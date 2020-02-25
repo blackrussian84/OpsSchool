@@ -1,18 +1,18 @@
 #!/bin/bash
 #add fix to exercise5-server1 here
 
+
+su - vagrant 
 sudo chmod 700 /home/vagrant/.shh
-sudo chmod 644  /home/vagrant/.ssh/authorized_keys
+sudo chmod 644  ~/vagrant/.ssh/authorized_keys
 
 sudo echo "Host *
     StrictHostKeyChecking no
-    UserKnownHostsFile /dev/null" >> /home/vagrant/.ssh/config
+    UserKnownHostsFile /dev/null" >> ~/vagrant/.ssh/config
 
 
-
- 
-sudo echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbpUUDFnWzH7MoOsQlP3DOKsn/N+En0Bq0EFUPspPBI0XfNsgJmPjK5nOd+arHn7k7d/EeiLRp3WHDMbheQAahWvOJSih0Z1lpP6dhdm5WCGnYDlgjd6vsChezIV15KNVNwrx43c3txcCYkh/sv95Cqa24plOuUPdhSiKu6M9P3qlxkCmMwr7IecsNOyqCkkjzLxZ11UFzM6mktb0ccClsLBWRngIObMnqj9vjlsrqDUXYaxPa/eMZZ5D8iyqHCrafjDx1q9U1l32/wKhUS2wWfTYamRXMbwtkHHA7tptmdCmje2R5NmxwMuCImz9Cy46atE+tcEUovBo9yAtI+nGL vagrant@server2" |tee -a /vagrant/.ssh/authorized_keys
-sudo echo "-----BEGIN RSA PRIVATE KEY-----
+id_rsa.pub="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbpUUDFnWzH7MoOsQlP3DOKsn/N+En0Bq0EFUPspPBI0XfNsgJmPjK5nOd+arHn7k7d/EeiLRp3WHDMbheQAahWvOJSih0Z1lpP6dhdm5WCGnYDlgjd6vsChezIV15KNVNwrx43c3txcCYkh/sv95Cqa24plOuUPdhSiKu6M9P3qlxkCmMwr7IecsNOyqCkkjzLxZ11UFzM6mktb0ccClsLBWRngIObMnqj9vjlsrqDUXYaxPa/eMZZ5D8iyqHCrafjDx1q9U1l32/wKhUS2wWfTYamRXMbwtkHHA7tptmdCmje2R5NmxwMuCImz9Cy46atE+tcEUovBo9yAtI+nGL vagrant@server2"  
+id_rsa="-----BEGIN RSA PRIVATE KEY-----
 MIIEowIBAAKCAQEA0lEwHWfaX8bA2EFFpVCXV7Bg9mQJS4gTByiFGMIRbQa6IJE2
 w1jAFxj+gN0cAAEsZvMgFqApIf6FryOo9oTr7gCrER00B/ONGD+OW1mLrbvUB4h8
 YDznHV1/EolTvfrgTMdW3WYkYpfPMak2y2+1leQ5McMR4VJDIK/6eJQE0qDUd4wu
@@ -38,4 +38,7 @@ aKrQZGPG3/objrx3se+4r3+xBfXZT84JexkqT94ljSeLeTJCvbhOg8xq71KlP1qN
 +qOEKQKBgEpKU6IZSuYDFVW3ZGKHznCYNBzKhRSXlRTGUl1lBUpHzKOP7Z1Ohxpk
 auk6q9uQUfmPpmvxuOWnRs+GgXqs3/0wcgNKIMm0Sx1wSB7Oa21UPnjUEy+S6aGu
 lXNO+xbaaP2cEJ+VbnJ2lrnqV5yOfdwfZGBFBPP+lBPGgtU7oL7g
------END RSA PRIVATE KEY-----" | tee -a /home/vagrant/.shh/id_rsa
+-----END RSA PRIVATE KEY-----"
+
+sudo tee -a $id_rsa.pub ~/vagrant/.ssh/authorized_keys
+sudo tee -a $id_rsa ~/vagrant/.ssh/id_rsa

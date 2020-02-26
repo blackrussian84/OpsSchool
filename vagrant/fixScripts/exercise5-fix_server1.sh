@@ -3,6 +3,6 @@
 
 sudo ssh-keyscan server2 >> known_hosts &
 sleep 2 
-sudo su - vagrant -c "sshpass -p vagrant  ssh-copy-id -i /vagrant/ser1.pub  server2" &
+sudo su - vagrant -c "sshpass -p vagrant  ssh-copy-id -i /vagrant/serv1.pub  server2" &
 
 

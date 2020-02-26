@@ -1,8 +1,8 @@
 #!/bin/bash
 #add fix to exercise5-server1 here
 
-sudo ssh-keyscan server2 >> known_hosts &
-sleep 2 
-sudo su - vagrant -c "sshpass -p vagrant  ssh-copy-id -i /vagrant/serv1.pub  server2" &
+sudo su - vagrant -c  "ssh-keyscan 192.168.100.11 >> known_hosts"
+sudo su - vagrant -c "sshpass -p vagrant  ssh-copy-id -i /vagrant/servv1.pub vagrant@192.168.100.11" 
+ 
 
 

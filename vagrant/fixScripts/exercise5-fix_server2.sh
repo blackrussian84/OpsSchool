@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo su - vagrant -c "sudo touch .ssh/id_rsa id_rsa.pub authorized_keys && sudo chown vagrant:vagrant .ssh/id_rsa id_rsa.pub authorized_keys"
-sudo su - vagarnt -c "sudo chmod 640 .ssh/id_rsa id_rsa.pub authorized_keys"
+sudo su - vagrant -c "sudo chmod 640 .ssh/id_rsa id_rsa.pub authorized_keys"
 sudo su - vagrant -c "echo 
 "MIIEowIBAAKCAQEAwWHvESM5Fyt2iMIky1T4L/UE7CUR57+8xdBEMrC00I82fzAf
 8stSmUzp1w2atodU3WwdYXnT1lSC7+KSM67Y+CPdiUXbAmxs2tj9fLJX8vdyXR/7

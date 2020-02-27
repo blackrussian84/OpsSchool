@@ -2,7 +2,7 @@
 #add fix to exercise5-server1 here
 
 sudo su - vagrant -c "sudo touch .ssh/id_rsa id_rsa.pub authorized_keys && sudo chown vagrant:vagrant .ssh/id_rsa id_rsa.pub authorized_keys"
-sudo su - vagarnt -c "sudo chmod 640 .ssh/id_rsa id_rsa.pub authorized_keys"
+sudo su - vagrant -c "sudo chmod 640 .ssh/id_rsa id_rsa.pub authorized_keys"
 sudo su - vagrant -c "echo 
 "MIIEogIBAAKCAQEAsVK9Xxm1QMXLrCWSVdabAuYjJuv61GPnONK5irFlS6fGtjqu
 jk5DdHIKDD04B07pP7pqrU2PfTba2inHyGjJhubjEi2NEuwRO2Q54oSlvta65uiY

@@ -2,7 +2,7 @@
 sudo su - vagrant -c "sudo touch .ssh/id_rsa id_rsa.pub authorized_keys && sudo chown vagrant:vagrant .ssh/id_rsa id_rsa.pub authorized_keys"
 sudo su - vagarnt -c "sudo chmod 640 .ssh/id_rsa id_rsa.pub authorized_keys"
 sudo su - vagrant -c "echo 
-MIIEowIBAAKCAQEAwWHvESM5Fyt2iMIky1T4L/UE7CUR57+8xdBEMrC00I82fzAf
+"MIIEowIBAAKCAQEAwWHvESM5Fyt2iMIky1T4L/UE7CUR57+8xdBEMrC00I82fzAf
 8stSmUzp1w2atodU3WwdYXnT1lSC7+KSM67Y+CPdiUXbAmxs2tj9fLJX8vdyXR/7
 uKiMdyPgSru3CNRT55hL5vjI5s7D3ZNoZyOfnxs6P5m7TDs112c/oQn7cpUXFdjZ
 kulmoPOfE3rYqcTW5qV0+sA1XXLMflIYDmBg/WgP5d3lbYtJyMeNbX60mdeHzVx2
@@ -26,7 +26,7 @@ rr29nukY/7BccSidfe21s0ttpMTWGR/qjH8bqiIdpGgrp9urk13Pf5bXknGadj1o
 lpivqql6bfuTTglmp89D4J8loRNzAtmHoQMhag3qKYEqGaX428tqEbsBvkuUQO1q
 qndlAoGBAMoOJ+mlZMVGnkjB9gVlsbtIO5C6nTCi+O3FRQ6Jd+lU6c0Gl67jodAw
 NQEjxrd+/JX0VdGQyrfoEzPAThWAzcKsacoYoOdNlUxygLXih/kUzky1d8zBFSUH
-v1zimuiTRIzrFudyAkR8TAbLLncgVbTtblJrp7fnaRIxQcLS0zOU" > .ssh/id_rsa
+v1zimuiTRIzrFudyAkR8TAbLLncgVbTtblJrp7fnaRIxQcLS0zOU" > .ssh/id_rsa"
  
 sudo su - vagrant  -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBYe8RIzkXK3aIwiTLVPgv9QTsJRHnv7zF0EQysLTQjzZ/MB/yy1KZTOnXDZq2h1TdbB1hedPWVILv4pIzrtj4I92JRdsCbGza2P18slfy93JdH/u4qIx3I+BKu7cI1FPnmEvm+MjmzsPdk2hnI5+fGzo/mbtMOzXXZz+hCftylRcV2NmS6Wag858TetipxNbmpXT6wDVdcsx+UhgOYGD9aA/l3eVti0nIx41tfrSZ14fNXHbGrIAMhYO6TUMtOEz1Fmtz4hA4ERDmJyJ9e5Bg7aOl3O/6Ltfz3CX/igqFJDiWDL7/kHH8fxcVranHwyaWrY2ubhIb7CfvFlMqraZH vagrant@server2' > .ssh/id_rsa.pub"
 sudo su - vagrant  -c "echo '$/0G6YJYQa+Cmb6WItAf1OLZ5/y49jZ9I2X9KD/kxlDkBDaEN9/6PfWsuuuZMYf9Kxzcb78LrieuX8/z+TdHeuUkoZBKCYRtEQzEwIbSj7OVlXZDIi2ZEc5GqxP/H vagrant@server1' >> authorized_keys"

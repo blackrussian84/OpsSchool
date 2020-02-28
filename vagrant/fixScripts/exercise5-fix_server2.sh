@@ -8,8 +8,8 @@
 #sudo su - vagrant -c "sudo chown id_rsa2 id_rsa2.pub vagrant:vagrant"
 
 #sudo su - vagrant -c "sudo chmod 644 ~/.ssh/authorized_keys"
-sudo su - vagrant -c "sudo mv /vagrant/key2 /home/vagrant/.ssh/" &  
-sudo su - vagrant -c "sudo cat /vagrant/key1.pub | tee -a /home/vagrant/.ssh/authorized_keys" &
+sudo su - vagrant -c "mv /vagrant/key2 /home/vagrant/.ssh/" &  
+sudo su - vagrant -c "cat /vagrant/key1.pub | tee -a /home/vagrant/.ssh/authorized_keys" &
 #sudo su - vagrant -c "mv /vagrant/id_rsa2 /home/vagrant/.ssh/"
-sudo su - vagrant -c "sudo mv /vagrant/key2.pub /home/vagrant/.ssh/" &
+sudo su - vagrant -c "mv /vagrant/key2.pub /home/vagrant/.ssh/" &
 

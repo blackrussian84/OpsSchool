@@ -8,9 +8,8 @@
  
 #sudo su - vagrant -c "sudo ssh-keygen -t rsa -N '' -f /vagrant/id_rsa1"
 #sudo su - vagrant -c "sudo chown id_rsa1 id_rsa1.pub vagrant:vagrant"
-#sudo su - vagrant -c "sudo chmod 644 ~/.ssh/authorized_keys"
+sudo su - vagrant -c "sudo chmod 644 ~/.ssh/authorized_keys"
 sudo su - vagrant -c "mv /vagrant/key1 /home/vagrant/.ssh/" &
-sudo su - vagrant -c "cat /vagrant/key2.pub | tee -a /home/vagrant/.ssh/authorized_keys" &
-#sudo su - vagrant -c "mv /vagrant/key1 /home/vagrant/.ssh/"
+sudo su - vagrant -c "cat /vagrant/key2.pub |sudo tee -a /home/vagrant/.ssh/authorized_keys" &
 sudo su - vagrant -c "mv /vagrant/key1.pub /home/vagrant/.ssh/" &
 

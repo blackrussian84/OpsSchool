@@ -14,7 +14,7 @@ sudo su - vagrant -c "mv .ssh/id_rsa1 .ssh/id_rsa"
 sudo su - vagrant -c "cp /vagrant/id_rsa1.pub .ssh/id_rsa.pub"
 
 sudo su - vagrant -c "chmod 0600 /home/vagrant/.ssh/id_rsa"
-#sudo su - vagrant -c "sleep 15 && cat /vagrant/id_rsa2.pub >> ~/.ssh/authorized_keys" &
+sudo su - vagrant -c "sleep 15 && cat /vagrant/id_rsa2.pub >> ~/.ssh/authorized_keys" &
 sudo su - vagrant -c "chmod 0600 ~/.ssh/authorized_keys"
 sudo su - vagrant -c "echo Host * >> /home/vagrant/.ssh/config"
 sudo su - vagrant -c "echo StrictHostKeyChecking no >> /home/vagrant/.ssh/config"

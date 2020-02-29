@@ -16,7 +16,7 @@ sudo su - vagrant -c "echo Host * >> /home/vagrant/.ssh/config"
 sudo su - vagrant -c "echo StrictHostKeyChecking no >> /home/vagrant/.ssh/config"
 sudo su - vagrant -c "echo UserKnownHostsFile=/dev/null >> /home/vagrant/.ssh/config"
 
-sudo su - vagrant -c "sshpass -p 'vagrant'  ssh-copy-id -i /home/vagrant/.ssh/id_rsa_pub server1"
+sudo su - vagrant -c "sshpass -p 'vagrant'  ssh-copy-id -i /home/vagrant/.ssh/id_rsa.pub server1"
 #sudo su - vagrant -c "sshpass -p 'vagrant' ssh server1 cat /vagrant/id_rsa.pub2 | tee -a .ssh/authorized_keys && ssh-copy-id -i /vagrant/id_rsa1.pub server2"
 sudo su - vagrant -c "sshpass -p 'vagrant' ssh server1 cat .ssh/id_rsa1.pub | tee -a .ssh/authorized_keys"
 

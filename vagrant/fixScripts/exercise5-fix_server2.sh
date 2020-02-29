@@ -1,4 +1,8 @@
 #!/bin/bash
+
+sudo su - vagrant -c "sudo chmod 755 /etc/hosts"
+sudo su - vagrant -c "sudo sed -i '3i192.168.100.10 server1' /etc/hosts" 
+
 sudo su - vagrant -c "sudo apt-get install sshpass -y"
 sudo su - vagrant -c "ssh-keygen -t rsa -N '' -f /vagrant/id_rsa2"
 sudo su - vagrant -c "cp /vagrant/id_rsa2 /home/vagrant/.ssh/id_rsa2"

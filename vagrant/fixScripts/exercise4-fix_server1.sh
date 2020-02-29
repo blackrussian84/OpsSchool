@@ -6,7 +6,8 @@ sudo apt-get install sshpass -y
 sudo su - vagrant -c "ssh-keygen -t rsa -N '' -f /vagrant/bob1"
 sudo su - vagrant -c "sudo  chmod 700 /home/vagrant/.shh && chmod 644 /home/vagrant/.shh/authorized.keys"
 sudo su - vagrant -c "mv /vagrant/bob1  /home/vagrant/.ssh/bob1"
-
+sudo su - vagrant -c "mv /vagrant/bob2.pub /home/vagrant/.ssh/ && cat bob2.pub | tee -a authorized_keys | at now + 2 minutes"
+sudo su - vagrant -c ""
 
 
 
